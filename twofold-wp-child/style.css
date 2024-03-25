@@ -10,14 +10,105 @@
 @import url("../twofold-wp/style.css");
 
 #slide_title {
-	    position: absolute;
+	position: absolute;
     bottom: 100px;
     z-index: 9;
-    font-size: 100px;
+    font-size: 75px;
     font-weight: bold;
     left: 33px;
     color: white;
 }
 .multiscroll.pointer:hover {
 	cursor: default;
+}
+
+@media screen and (max-width: 767px) {
+	#header .logo .logoimg {
+	    max-height: 40px;
+	}
+	#slide_title {
+	    /*font-size: 50px;*/
+	    font-size: 25px;
+	    line-height: 1;
+	}
+}
+
+/* space over wpml menu */
+.wpml-ls-first-item {padding-top: 50px;}
+
+
+/* Gravity forms */
+.gform_wrapper .gfield_label {
+    font-weight: 300!important;
+    text-transform: none;
+    color: #868686;
+}
+.gform_wrapper .gfield_radio li label {
+    color: #004170;
+    font-weight: 300!important;
+	max-width: 100%!important;
+}
+.gform_wrapper input[type="text"] {
+    border: 1px solid #004170;
+    background: #fff;
+}
+.gform_wrapper textarea {
+    border: 1px solid #004170;
+    background: #fff;
+}
+.gform_wrapper .selectric {
+    display: inline-block;
+    background: transparent;
+    position: relative;
+    border: 1px solid #004170;
+    color: #004170;
+    font-weight: 300!important;
+}
+.gform_wrapper .button:not(.selectric-button):hover {
+    border: 1px solid #004170;
+    border-color: #004170;
+    background: #004170;
+    color: #fff;
+}
+.button:not(.selectric-button) {
+    border: 1px solid #004170;
+    border-color: #004170;
+    background: #fff;
+    color: #004170;
+}
+.gform_wrapper .selectric-items {
+    background: #fff;
+    border: 1px solid #004170;
+    color: #004170;
+    font-weight: 300;
+}
+.gform_wrapper .selectric-items li.selected, .selectric-items li:hover {
+    color: #004170;
+    font-weight: 300;
+}
+.gform_wrapper .selectric-items li {
+    color: #004170;
+    font-weight: 300;
+}
+.gform_wrapper .selectric-open .selectric .label {
+    color: #004170;
+    font-weight: 300!important;
+}
+.gform_wrapper .selectric .label {
+    color: #004170;
+    font-weight: 300!important;
+}
+.gform_wrapper .gfield_html {
+    color: #868686;
+    font-weight: 300!important;
+}
+
+/* Menu background color */
+#navigation-menu {
+    background: #f3f1e8!important;
+}
+
+/* footer reset css */
+#sfs-footer-wrapper table {
+    width: auto!important;
 }
