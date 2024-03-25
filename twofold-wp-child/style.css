@@ -8,3 +8,16 @@
 */
 
 @import url("../twofold-wp/style.css");
+
+#slide_title {
+	    position: absolute;
+    bottom: 100px;
+    z-index: 9;
+    font-size: 100px;
+    font-weight: bold;
+    left: 33px;
+    color: white;
+}
+.multiscroll.pointer:hover {
+	cursor: default;
+}
